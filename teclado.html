@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-size="27">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teclado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div>
+  <input type="range" data-size="12" name="size" value="12" id="size" min="5" max="25" oninput="javascript: this.dataset.size = this.value, document.body.style.fontSize = `${this.value}px`">
+
+</div>
+  <main class="teclado">
+    <section>
+      <div>
+        <span data-key="esc" role="button" tabindex="0"></span><span role="button" tabindex="0" data-key="?" data-key-alt="f1"></span><span data-key-alt="f2"></span><span data-key-alt="f3"></span><span data-key-alt="f4"></span><span data-key-alt="f5"></span><span data-key-alt="f6"></span><span data-key-alt="f7"></span><span data-key-alt="f8"></span><span data-key-alt="f9"></span><span data-key-alt="f10"></span><span data-key-alt="f11"></span><span data-key="✈️" data-key-alt="f12"></span><span data-key="prt sc" data-key-alt="ins"></span><span data-key="delete"></span>
+      </div>
+
+      <div>
+        <span data-key="\" data-key-alt="|"></span><span data-key="1" data-key-alt="!"></span><span data-key="2" data-key-alt="“"></span><span data-key="3" data-key-alt="#"></span><span data-key="4" data-key-alt="$"></span><span data-key="5" data-key-alt="%"></span><span data-key="6" data-key-alt="&"></span><span data-key="7" data-key-alt="/"></span><span data-key="8" data-key-alt="("></span><span data-key="9" data-key-alt=")"></span><span data-key="0" data-key-alt="="></span><span data-key="'" data-key-alt="?"></span><span data-key="«" data-key-alt="»"></span><span data-key="←"></span>
+      </div>
+
+      <div>
+        <span data-key="↹"></span><span data-key="Q"></span><span data-key="W"></span><span data-key="E"></span><span data-key="R"></span><span data-key="T"></span><span data-key="Y"></span><span data-key="U"></span><span data-key="I"></span><span data-key="O"></span><span data-key="P"></span><span data-key="+" data-key-alt="*"></span><span data-key="´" data-key-alt="`"></span><span data-key="~" data-key-alt="^"></span>
+      </div>
+      <div>
+        <span data-key="caps lock"></span><span data-key="A"></span><span data-key="S"></span><span data-key="D"></span><span data-key="F"></span><span data-key="G"></span><span data-key="H"></span><span data-key="J"></span><span data-key="K"></span><span data-key="L"></span><span data-key="Ç"></span><span data-key="º" data-key-alt="ª"></span><span data-key="←"></span>
+      </div>
+      <div>
+        <span data-key="↑"></span><span data-key="Z"></span><span data-key="X"></span><span data-key="C"></span><span data-key="V"></span><span data-key="B"></span><span data-key="N"></span><span data-key="M"></span><span data-key="," data-key-alt=";"></span><span data-key="." data-key-alt=":"></span><span data-key="-" data-key-alt="—"></span><span data-key="↑" data-key-alt="pause"></span>
+      </div>
+      <div>
+        <span data-key="ctrl"></span><span data-key="fn"></span><span data-key="⊞"></span><span data-key="alt"></span><span></span><span data-key="alt gr"></span><span data-key="‹"></span><span data-key="<"></span><span><span data-key="⋏"></span><span data-key="⋎"></span></span><span data-key=">"></span>
+      </div>
+
+    </section>
+    <section>
+      <div><span data-key="home"></span><span data-key="end"></span><span data-key="pg up"></span><span data-key="pg dn"></span></div>
+      <div><span data-key="num"></span><span data-key="/"></span><span data-key="*"></span><span data-key="-"></span></div>
+      <div><span data-key="7"></span><span data-key="8"></span><span data-key="9"></span><span data-key="+"></span></div>
+      <div><span data-key="4"></span><span data-key="5"></span><span data-key="6"></span></div>
+      <div><span data-key="1"></span><span data-key="2"></span><span data-key="3"></span><span data-key="←"></span></div>
+      <div><span data-key="0"></span><span data-key="."></span></div>
+
+    </section>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* input range zoom */
+
+input[name="size"] {
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 5em);
+}
+input[name=size]::before {
+
+  content: attr(data-size);
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 50px;
+  right: -30px;
+  bottom: -2px;
+}
+input[name=size]::after {
+
+  content: "Zoom";
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 1em);
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.teclado {
+  display: flex;
+  width: calc(2em * 22);
+  padding: 0.6em;
+  margin: 10px;
+  box-shadow: 0px 0px 5px 1px #999;
+  border-radius: 4px;
+}
+
+/* section 1 */
+
+.teclado section:first-child {
+  width: calc(2em * 16.8);
+}
+
+.teclado section span {
+  
+  width: 2em;
+  height: 1.6em;
+  display: inline-block;
+  margin: 0.15em;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px #000, inset 0px -2px 1px 2px #ddd, inset 2px 0px 20px 2px #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.teclado section span::before {
+
+  content: attr(data-key);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #000;
+  font-size: 0.7em;
+}
+
+.teclado section span::after {
+
+  content: attr(data-key-alt);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+ 
+  color: #000;
+  font-size: 0.3em;
+}
+
+.teclado section div:first-child span::before, .teclado section div:last-child span::before {
+  font-size: 0.5em;
+
+}
+.teclado section div:nth-child(n+2) span::after {
+  font-size: 0.5em;
+}
+.teclado span:active {
+
+  box-shadow: inset 0px 0px 2px #000;
+}
+.teclado section:first-child div:nth-child(1) span {
+  width: 1.84em;
+}
+.teclado section div:nth-child(1) span {
+  height: calc((2/2) * 1em);
+  
+}
+
+
+.teclado section:first-child div:nth-child(2) span:nth-child(n+2) {
+  width: 1.92em;
+}
+
+.teclado section:first-child div:nth-child(2) span:first-child {
+  width: calc((3 / 2)* 1em);
+}
+
+.teclado section:first-child div:nth-child(2) span:last-child {
+  width: calc((6.8/2) * 1em);
+}
+
+
+.teclado section:first-child div:nth-child(3) span:nth-child(n+2) {
+  width: 1.87em;
+}
+
+.teclado section:first-child div:nth-child(3) span:first-child {
+  width: calc((5/2) * 1em);
+}
+
+.teclado section:first-child div:nth-child(3) span:last-child {
+  width: calc((6/2) * 1em);
+}
+
+
+.teclado section:first-child div:nth-child(4) span:first-child {
+  width: calc((7/2) * 1em);
+}
+
+.teclado section:first-child div:nth-child(4) span {
+  width: 1.87em;
+}
+
+.teclado section:first-child div:nth-child(4) span:last-child {
+  width: calc((8.4/2) * 1em);
+}
+
+.teclado section:first-child div:nth-child(5) span {
+  width: 1.87em;
+}
+
+.teclado section:first-child div:nth-child(5) span:first-child {
+
+  width: calc((9/2) * 1em);
+}
+
+.teclado section:first-child div:nth-child(5) span:last-child {
+  width: calc((10.8/2) * 1em);
+}
+
+.teclado section:first-child div:nth-child(6) span {
+  width: 1.99em;
+}
+
+.teclado section:first-child div:nth-child(6) span:nth-child(5) {
+  width: calc((22.8/2) * 1em);
+}
+.teclado section:first-child div:nth-child(6) > span:nth-last-child(2) {
+  display: inline-block;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: initial;
+  margin: 0.15em;
+  position: relative;
+}
+.teclado section:first-child div:nth-child(6) span > span {
+  display: block;
+  height: calc((1.45/2) * 1em);
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+
+}
+
+.teclado section:first-child div:nth-child(6) span > span:nth-child(1) {
+
+  box-shadow: 0px 0px 3px #000, inset 0px -2px 3px 1px #fff, inset 2px 0px 20px 2px #ddd;
+}
+
+.teclado section:first-child div:nth-child(6) span > span:nth-child(2) {
+  bottom: 0;
+  position: absolute;
+}
+
+/* section 2*/
+
+.teclado section:last-child div:nth-child(3) span:last-child {
+  height: calc((7.5/2) * 1em);
+  position: absolute;
+}
+
+.teclado section:last-child div:nth-child(5) span:last-child {
+  height: calc((7.5/2) * 1em);
+  position: absolute;
+}
+
+.teclado section:last-child div:nth-child(6) span:first-child {
+  width: calc((8.6/2) * 1em);
+}
